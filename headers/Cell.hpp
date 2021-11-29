@@ -1,9 +1,5 @@
-//
-// Created by pe2ch on 10.11.21.
-//
-
-#ifndef UNTITLED22_HEADERS_CELL_HPP_
-#define UNTITLED22_HEADERS_CELL_HPP_
+#ifndef HEADERS_CELL_HPP_
+#define HEADERS_CELL_HPP_
 
 #include <tuple>
 
@@ -22,4 +18,4 @@ struct std::hash<Cell> {
   std::size_t operator()(Cell const &cell) const noexcept;
 };
 
-#endif //UNTITLED22_HEADERS_CELL_HPP_
+#endif //HEADERS_CELL_HPP_

@@ -1,7 +1,5 @@
-//
-// Created by pe2ch on 10.11.21.
-//
-#pragma once
+#ifndef HEADERS_APPLE_HPP_
+#define HEADERS_APPLE_HPP_
 
 #include <ctime>
 #include <random>
@@ -20,3 +18,5 @@ class Apple {
   void SetNewApple();
 
 };
+
+#endif //HEADERS_APPLE_HPP_

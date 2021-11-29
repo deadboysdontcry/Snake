@@ -1,7 +1,6 @@
-//
-// Created by pe2ch on 11.11.21.
-//
-#pragma once
+#ifndef HEADERS_SNAKEWINDOW_HPP_
+#define HEADERS_SNAKEWINDOW_HPP_
+
 
 #include <QKeyEvent>
 #include <QWidget>
@@ -36,3 +35,5 @@ class SnakeWindow : public QWidget {
   void SetNewRecord();
   void GameOver(QPainter &qp);
 };
+
+#endif //HEADERS_SNAKEWINDOW_HPP_

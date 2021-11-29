@@ -1,8 +1,6 @@
-//
-// Created by pe2ch on 10.11.21.
-//
+#ifndef HEADERS_SNAKE_HPP_
+#define HEADERS_SNAKE_HPP_
 
-#pragma once
 #include <queue>
 #include <unordered_set>
 
@@ -29,3 +27,5 @@ class Snake {
   [[nodiscard]] Cell GetFront() const;
   Direction GetDirection() const;
 };
+
+#endif //HEADERS_SNAKE_HPP_

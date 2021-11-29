@@ -1,7 +1,3 @@
-//
-// Created by pe2ch on 11.11.21.
-//
-
 #include "../headers/SnakeWindow.hpp"
 
 SnakeWindow::SnakeWindow(QWidget *parent) : collisions_(snake_, apple_),
@@ -15,7 +11,6 @@ SnakeWindow::SnakeWindow(QWidget *parent) : collisions_(snake_, apple_),
 }
 
 void SnakeWindow::timerEvent(QTimerEvent *) {
-
   cur_time_++;
   event_ = collisions_.CheckCollisions();
   switch (event_) {
@@ -95,7 +90,7 @@ void SnakeWindow::GameOver(QPainter &qp) {
 
   record_ = snake_.GetSize() - 1;
   QString message2;
-  std::ifstream istream("../data/record.txt");
+  std::ifstream istream("../resources/record.txt");
   int cur_record;
   istream >> cur_record;
   if(cur_record < record_) {
@@ -103,7 +98,7 @@ void SnakeWindow::GameOver(QPainter &qp) {
     message2 = QString("New record!!! \n") + QString("Your points: ") +
         QString::number(record_);
     istream.close();
-    std::ofstream ostream("../data/record.txt");
+    std::ofstream ostream("../resources/record.txt");
     ostream << cur_record;
     qp.translate(QPoint(w / 2 - 10, h / 2));
     qp.drawText(-textWidth / 2, 0, message2);
@@ -111,7 +106,7 @@ void SnakeWindow::GameOver(QPainter &qp) {
 
     QString message1 = QString("Game over!  ") + QString("Your points: ") +
         QString::number(record_);
-    QString message2 = QString("Record is: ") + QString::number(cur_record);
+    message2 = QString("Record is: ") + QString::number(cur_record);
     qp.translate(QPoint(w / 2, h / 2));
     qp.drawText(-textWidth / 2 - 10, 0, message1);
     qp.drawText(-textWidth / 2 + 40, 15, message2);

@@ -1,7 +1,3 @@
-//
-// Created by pe2ch on 10.11.21.
-//
-
 #include "../headers/Cell.hpp"
 
 bool operator!=(const Cell &c1, const Cell &c2) {

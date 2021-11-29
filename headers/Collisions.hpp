@@ -1,8 +1,6 @@
-//
-// Created by pe2ch on 10.11.21.
-//
+#ifndef HEADERS_COLLISIONS_HPP_
+#define HEADERS_COLLISIONS_HPP_
 
-#pragma once
 #include <iostream>
 
 #include "Apple.hpp"
@@ -23,3 +21,5 @@ class Collisions {
  private:
   [[nodiscard]] bool ToHerSelf() const;
 };
+
+#endif //HEADERS_COLLISIONS_HPP_

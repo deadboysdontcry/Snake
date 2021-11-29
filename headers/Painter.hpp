@@ -1,7 +1,3 @@
-//
-// Created by pe2ch on 11.11.21.
-//
-
 #ifndef UNTITLED22_HEADERS_PAINTER_HPP_
 #define UNTITLED22_HEADERS_PAINTER_HPP_
 

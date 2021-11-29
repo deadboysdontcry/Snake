@@ -1,7 +1,3 @@
-//
-// Created by pe2ch on 10.11.21.
-//
-
 #include "../headers/Collisions.hpp"
 
 Collisions::Collisions(Snake &snake, Apple &apple) : snake_(snake), apple_(apple) {}

@@ -1,8 +1,3 @@
-//
-// Created by pe2ch on 10.11.21.
-//
-
-
 #include "../headers/Apple.hpp"
 
 Apple::Apple() {

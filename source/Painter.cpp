@@ -1,6 +1,3 @@
-//
-// Created by pe2ch on 11.11.21.
-//
 #include "../headers/Painter.hpp"
 
 using namespace WindowConstants;
